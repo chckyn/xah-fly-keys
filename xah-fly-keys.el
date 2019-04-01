@@ -3303,6 +3303,29 @@ Version 2019-02-12"
 
 
 (xah-fly--define-keys
+ (define-prefix-command 'xah-fly-v-keymap)
+ '(
+   ("<" . eyebrowse-prev-window-config)
+   (">" . eyebrowse-next-window-config)
+   ("'" . eyebrowse-last-window-config)
+   ("\"" . eyebrowse-close-window-config)
+   ("," . eyebrowse-rename-window-config)
+   ("." . eyebrowse-switch-to-window-config)
+   ("0" . eyebrowse-switch-to-window-config-0)
+   ("1" . eyebrowse-switch-to-window-config-1)
+   ("2" . eyebrowse-switch-to-window-config-2)
+   ("3" . eyebrowse-switch-to-window-config-3)
+   ("4" . eyebrowse-switch-to-window-config-4)
+   ("5" . eyebrowse-switch-to-window-config-5)
+   ("6" . eyebrowse-switch-to-window-config-6)
+   ("7" . eyebrowse-switch-to-window-config-7)
+   ("8" . eyebrowse-switch-to-window-config-8)
+   ("9" . eyebrowse-switch-to-window-config-9)
+   ("c" . eyebrowse-create-window-config)
+   ("C-c" . eyebrowse-create-window-config)
+   ))
+
+(xah-fly--define-keys
  (define-prefix-command 'xah-fly-c-keymap)
  '(
    ("," . xah-open-in-external-app)
@@ -3578,7 +3601,7 @@ Version 2019-02-12"
    ("s" . save-buffer)
    ("t" . xah-fly-t-keymap)
    ("u" . switch-to-buffer)
-   ;; v
+   ("v" . xah-fly-v-keymap)
    ("w" . xah-fly-w-keymap)
    ("x" . xah-toggle-previous-letter-case)
    ("y" . xah-show-kill-ring)
