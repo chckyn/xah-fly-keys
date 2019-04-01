@@ -42,6 +42,9 @@
 ;; "qwerty-abnt"
 ;; "qwertz"
 ;; "workman"
+;; "tarmak-1"
+;; "tarmak-2"
+;; "tarmak-3"
 
 ;; (xah-fly-keys 1)
 
@@ -3090,6 +3093,120 @@ Version 2017-01-29"
     ("z" . "/"))
   "A alist, each element is of the form(\"e\" . \"d\"). First char is Dvorak, second is corresponding Workman layout. Not all chars are in the list, such as digits. When not in this alist, they are assumed to be the same.")
 
+(defvar xah--dvorak-to-tarmak-1-kmap
+  '(("." . "j")
+    ("," . "w")
+    ("'" . "q")
+    (";" . "z")
+    ("/" . "[")
+    ("[" . "-")
+    ("]" . "=")
+    ("=" . "]")
+    ("-" . "'")
+    ("a" . "a")
+    ("b" . "k")
+    ("c" . "i")
+    ("d" . "h")
+    ("e" . "d")
+    ("f" . "y")
+    ("g" . "u")
+    ("h" . "n")
+    ("i" . "g")
+    ("j" . "c")
+    ("k" . "v")
+    ("l" . "p")
+    ("m" . "m")
+    ("n" . "l")
+    ("o" . "s")
+    ("p" . "r")
+    ("q" . "x")
+    ("r" . "o")
+    ("s" . ";")
+    ("t" . "e")
+    ("u" . "f")
+    ("v" . ".")
+    ("w" . ",")
+    ("x" . "b")
+    ("y" . "t")
+    ("z" . "/"))
+  "A alist, each element is of the form(\"e\" . \"d\"). First char is Dvorak, second is corresponding Tarmak-1 layout. Not all chars are in the list, such as digits. When not in this alist, they are assumed to be the same.")
+
+(defvar xah--dvorak-to-tarmak-2-kmap
+  '(("." . "f")
+    ("," . "w")
+    ("'" . "q")
+    (";" . "z")
+    ("/" . "[")
+    ("[" . "-")
+    ("]" . "=")
+    ("=" . "]")
+    ("-" . "'")
+    ("a" . "a")
+    ("b" . "k")
+    ("c" . "i")
+    ("d" . "h")
+    ("e" . "d")
+    ("f" . "y")
+    ("g" . "u")
+    ("h" . "n")
+    ("i" . "j")
+    ("j" . "c")
+    ("k" . "v")
+    ("l" . "p")
+    ("m" . "m")
+    ("n" . "l")
+    ("o" . "s")
+    ("p" . "r")
+    ("q" . "x")
+    ("r" . "o")
+    ("s" . ";")
+    ("t" . "e")
+    ("u" . "t")
+    ("v" . ".")
+    ("w" . ",")
+    ("x" . "b")
+    ("y" . "g")
+    ("z" . "/"))
+  "A alist, each element is of the form(\"e\" . \"d\"). First char is Dvorak, second is corresponding Tarmak-2 layout. Not all chars are in the list, such as digits. When not in this alist, they are assumed to be the same.")
+
+(defvar xah--dvorak-to-tarmak-3-kmap
+  '(("." . "f")
+    ("," . "w")
+    ("'" . "q")
+    (";" . "z")
+    ("/" . "[")
+    ("[" . "-")
+    ("]" . "=")
+    ("=" . "]")
+    ("-" . "'")
+    ("a" . "a")
+    ("b" . "k")
+    ("c" . "i")
+    ("d" . "h")
+    ("e" . "s")
+    ("f" . "y")
+    ("g" . "u")
+    ("h" . "n")
+    ("i" . "d")
+    ("j" . "c")
+    ("k" . "v")
+    ("l" . "p")
+    ("m" . "m")
+    ("n" . "l")
+    ("o" . "r")
+    ("p" . "j")
+    ("q" . "x")
+    ("r" . "o")
+    ("s" . ";")
+    ("t" . "e")
+    ("u" . "t")
+    ("v" . ".")
+    ("w" . ",")
+    ("x" . "b")
+    ("y" . "g")
+    ("z" . "/"))
+  "A alist, each element is of the form(\"e\" . \"d\"). First char is Dvorak, second is corresponding Tarmak-3 layout. Not all chars are in the list, such as digits. When not in this alist, they are assumed to be the same.")
+
 (defvar xah-fly-key--current-layout nil
   "The current keyboard layout. Use `xah-fly-keys-set-layout' to set the layout.
 If the value is nil, it's automatically set to \"dvorak\"."
@@ -3712,6 +3829,9 @@ Argument must be one of:
  \"colemak-mod-dh\"
  \"dvorak\"
  \"programer-dvorak\"
+ \"tarmak-1\"
+ \"tarmak-2\"
+ \"tarmak-3\"
  \"qwerty\"
  \"qwerty-abnt\"
  \"qwertz\"
