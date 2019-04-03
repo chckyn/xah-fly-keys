@@ -3326,6 +3326,17 @@ Version 2019-02-12"
    ))
 
 (xah-fly--define-keys
+ (define-prefix-command 'xah-fly-z-keymap)
+ (progn
+   (defun org-refile-jump ()
+     (interactive)
+     (org-refile t))
+   '(
+     ("u" . org-refile)
+     ("e" . org-refile-jump)
+     )))
+
+(xah-fly--define-keys
  (define-prefix-command 'xah-fly-c-keymap)
  '(
    ("," . xah-open-in-external-app)
@@ -3606,7 +3617,7 @@ Version 2019-02-12"
    ("w" . xah-fly-w-keymap)
    ("x" . xah-toggle-previous-letter-case)
    ("y" . xah-show-kill-ring)
-   ;; z
+   ("z" . xah-fly-z-keymap)
    ;;
    ))
 
