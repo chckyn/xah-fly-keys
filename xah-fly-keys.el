@@ -3332,8 +3332,12 @@ Version 2019-02-12"
      (interactive)
      (org-refile t))
    '(
+     ("a" . org-agenda)
      ("u" . org-refile)
      ("e" . org-refile-jump)
+     ("h" . org-edit-special)
+     ("t" . org-babel-tangle)
+     ("g" . org-insert-link)
      )))
 
 (xah-fly--define-keys
