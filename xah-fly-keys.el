@@ -3334,6 +3334,9 @@ Version 2019-02-12"
    (defun chckyn/enable-dark-theme ()
      (interactive)
      (load-theme 'nimbus))
+   (defun bh/switch-to-scratch ()
+     (interactive)
+     (switch-to-buffer "*scratch*"))
    '(
      ("a" . org-agenda)
      ("o" . org-refile)
@@ -3345,6 +3348,7 @@ Version 2019-02-12"
      ("g" . org-insert-link)
      ("l" . chckyn/disable-dark-theme)
      ("r" . chckyn/enable-dark-theme)
+     ("m" . bh/switch-to-scratch)
      )))
 
 (xah-fly--define-keys
