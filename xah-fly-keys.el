@@ -3336,7 +3336,10 @@ Version 2019-02-12"
      (load-theme 'nimbus))
    '(
      ("a" . org-agenda)
-     ("u" . org-refile)
+     ("o" . org-refile)
+     ("e" . widen)
+     ("u" . org-narrow-to-subtree)
+     ("j" . org-capture)
      ("h" . org-edit-special)
      ("t" . org-babel-tangle)
      ("g" . org-insert-link)
