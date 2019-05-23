@@ -3328,12 +3328,20 @@ Version 2019-02-12"
 (xah-fly--define-keys
  (define-prefix-command 'xah-fly-z-keymap)
  (progn
+   (defun chckyn/disable-dark-theme ()
+     (interactive)
+     (disable-theme 'nimbus))
+   (defun chckyn/enable-dark-theme ()
+     (interactive)
+     (load-theme 'nimbus))
    '(
      ("a" . org-agenda)
      ("u" . org-refile)
      ("h" . org-edit-special)
      ("t" . org-babel-tangle)
      ("g" . org-insert-link)
+     ("l" . chckyn/disable-dark-theme)
+     ("r" . chckyn/enable-dark-theme)
      )))
 
 (xah-fly--define-keys
