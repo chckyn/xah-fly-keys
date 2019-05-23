@@ -3328,13 +3328,9 @@ Version 2019-02-12"
 (xah-fly--define-keys
  (define-prefix-command 'xah-fly-z-keymap)
  (progn
-   (defun org-refile-jump ()
-     (interactive)
-     (org-refile t))
    '(
      ("a" . org-agenda)
      ("u" . org-refile)
-     ("e" . org-refile-jump)
      ("h" . org-edit-special)
      ("t" . org-babel-tangle)
      ("g" . org-insert-link)
