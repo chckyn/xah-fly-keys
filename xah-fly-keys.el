@@ -3349,6 +3349,7 @@ Version 2019-02-12"
      ("l" . chckyn/disable-dark-theme)
      ("r" . chckyn/enable-dark-theme)
      ("m" . bh/switch-to-scratch)
+     ("c" . cce/set-font-scale)
      )))
 
 (xah-fly--define-keys
