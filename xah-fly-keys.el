@@ -3836,7 +3836,7 @@ Version 2019-02-12"
       (define-key xah-fly-key-map (kbd "C-4") 'next-error)
 
       (define-key xah-fly-key-map (kbd "C-a") 'mark-whole-buffer)
-      (define-key xah-fly-key-map (kbd "C-n") 'xah-new-empty-buffer)
+      ;; (define-key xah-fly-key-map (kbd "C-n") 'xah-new-empty-buffer)
       (define-key xah-fly-key-map (kbd "C-S-n") 'make-frame-command)
       (define-key xah-fly-key-map (kbd "C-o") 'find-file)
       (define-key xah-fly-key-map (kbd "C-s") 'save-buffer)
