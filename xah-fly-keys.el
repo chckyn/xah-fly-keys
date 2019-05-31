@@ -3424,8 +3424,10 @@ Version 2019-02-12"
    ("p" . finder-by-keyword)
    ("r" . apropos-variable)
    ("s" . describe-syntax)
+   ("t" . epkg-describe-package)
    ("u" . elisp-index-search)
    ("v" . apropos-value)
+   ("x" . borg-assimilate)
    ("z" . describe-coding-system)))
 
 (xah-fly--define-keys
